@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+body {
+    background-color: #E5E5E5;
+    margin-bottom: 200px;
+}
+
+.wrapper {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: 1200px;
+    padding-right: 10px;
+    padding-left:  10px;
+}
+
+.blue:hover {
+    color: #5583ea;
+    transition: .3s;
+}
+
+.green:hover {
+    color: #3ed454;
+    transition: .3s;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 68px 0 68px;
+}
+
+.logo {
+    width: 221px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.messengersItem {
+    cursor: pointer;
+}
+
+.telephone a {
+    margin-right: 60px;
+    color: black;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.telephone:hover a {
+    background-size: 100% 2px;
+}
+
+.messengers {
+    display: flex;
+    color: #B3B3B3;
+}
+
+.messengers .leftSpace {
+    margin-left: 30px;
+}
+
+.promoScreen {
+    width: 100%;
+    background-image: url("../img/promo-screen-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blockMnu {
+    margin-right: 114px;
+}
+
+.blockMnu .menu {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 244.19%;
+    letter-spacing: 0.035em;
+    color: #858687;
+}
+
+.menuItem {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.menuItem:hover {
+    background-size: 100% 2px;
+    color: black;
+    transition: .3s;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.application {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: #235DE2;
+    border-radius: 50px;
+    border: none;
+    padding: 13px 40px;
+    margin-top: 65px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 186.19%;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.application:hover {
+    transform: scale(0.98);
+}
+
+.application:active {
+    transform: scale(0.9);
+}
+
+.hi {
+    margin-left: 12px;
+}
+
+.promoScreenTxt {
+    font-style: normal;
+    font-size: 72px;
+    line-height: 139%;
+    color: #1F2225;
+}
+
+.caseList {
+    margin-top: 137px;
+}
+
+.caseListTxt {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 160.19%;
+    color: #000000;
+}
+
+.hrefSpan {
+    color: #5583ea;
+    border-bottom: 2px solid #5583ea;
+}
+
+.portfolioList {
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-columns: minmax(375px, 860px);
+    grid-auto-rows: minmax(260px, 596px);
+    gap: 20px;
+}
+
+.picture {
+    width: 100%;
+    transition: 1s;
+}
+
+.picture:hover {
+    transform: scale(1.05);
+}
+
+.projectCaseBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nameProject {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 197.69%;
+    letter-spacing: 0.035em;
+    color: #000000;
+    margin-top: 30px;
+}
+
+.descriptionProject {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 197.69%;
+    letter-spacing: 0.035em;
+    color: #383838;
+    margin-top: 20px;
+}
+
+.caseDescription {
+    background: #EAE9E9;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 197.69%;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #A8A8A8;
+    padding: 5px 7px;
+    margin-top: 15px;
+    width: fit-content;
+}
+
+@media screen and (max-width: 720px) {
+    .promoScreen {
+        background-position: left top;
+        background-size: cover;
+        flex-direction: column-reverse;
+        align-items: inherit;
+    }
+
+    .promoScreenTxt {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 139.19%;
+    }
+
+    .portfolioList {
+        display: flex;
+        flex-direction: column;
+    }
+}

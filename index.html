@@ -2,45 +2,74 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style/style.css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-    <script src="js/tapIt.js"></script>
     <title>FactoryTech</title>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
+        <img class="mobileLogo" src="img/Vector.svg">
         <div class="logo">
-            <img src="img/factory_tech_logo.svg" alt="FactoryTech">
+            <img src="img/factory_tech_logo.png" alt="FactoryTech">
         </div>
-        <div class="contacts">
+        <div class="contacts fullScreen">
             <div class="telephone"><a href="tel:+79279831149">+7&nbsp;(927)&nbsp;983-11-49</a></div>
             <div class="messengers">
                 <div class="messengersItem blue">Telegram</div>
                 <div class="messengersItem leftSpace  green">Whatsapp</div>
             </div>
         </div>
+        <div class="contacts mobileScreen">
+            <button class="btnMobileScreen open">
+                <img src="img/phone.svg">
+            </button>
+        </div>
     </header>
+    <div class="mobileMnu">
+        <div class="mobileHeader">
+            <div class="logo">
+                <img src="img/factory_tech_logo.png" alt="FactoryTech">
+            </div>
+            <div class="mobileScreen">
+                <button class="btnMobileScreen exit" onclick="exitWin">
+                    <img src="img/close.svg">
+                </button>
+            </div>
+        </div>
+        <div class="contactUs">
+            Вы можете связатья с нами по телефону:
+        </div>
+        <div class="phoneNumber">
+            +7 (927) 983-11-49
+        </div>
+        <div class="sendMessage">
+            Или отправить сообщение в мессенджерах:
+        </div>
+        <div class="messengers">
+            <span class="telegram">Telegram</span>
+            <span class="whatsapp">Whatsapp</span>
+        </div>
+    </div>
     <section class="promoScreen">
         <div class="blockMnu">
             <div class="menu">
-                <div class="menuItem">Разработка сайтов</div>
-                <div class="menuItem">Мобильное приложение</div>
-                <div class="menuItem">Графический дизайн</div>
+                <div class="menuItem">Разработка&nbsp;сайтов</div>
+                <div class="menuItem">Мобильное&nbsp;приложение</div>
+                <div class="menuItem">Графический&nbsp;дизайн</div>
             </div>
-            <button class="application">Оставить&nbsp;заявку&nbsp;<span class="hi"><img src="img/hi-img.svg"></span>
-            </button>
+            <button class="application btnAnimate">Оставить&nbsp;заявку&nbsp;👋🏻</button>
         </div>
-        <div id="typer" class="promoScreenTxt"></div>
+        <div class="promoScreenTxt"><span class="beforeTxt">Прямо сейчас мы</span><span id="typer"></span></div>
     </section>
     <section class="caseList">
         <div class="caseListTxt">Мы разрабатываем свой новый сайт.<br/>Но уже сейчас вы можете <span class="hrefSpan">посмотреть наши&nbsp;кейсы</span>&nbsp;👇🏻
         </div>
         <div class="portfolioList">
             <div class="portfolioBlock">
-                <img class="picture" src="img/black-rectangle.svg"/>
+                <img class="picture" src="img/black-rectangle.png"/>
                 <div class="projectCaseBlock">
                     <div class="projectCase">
                         <div class="nameProject">Gregory Wood</div>
@@ -50,7 +79,7 @@
                 </div>
             </div>
             <div class="portfolioBlock">
-                <img class="picture" src="img/black-rectangle.svg"/>
+                <img class="picture" src="img/black-rectangle.png"/>
 
                 <div class="projectCaseBlock">
                     <div class="projectCase">
@@ -67,12 +96,13 @@
 
 <script>
     $('#typer').typeIt({
-        strings: ["Прямо сейчас мы делаем мобильное приложение"],
-        speed: 50,
+        strings: [" делаем мобильное приложение"],
+        speed: 30,
         breakLines: false,
         autoStart: false
     });
 </script>
+<script src="js/slide.js"></script>
 
 </body>
 </html>

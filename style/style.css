@@ -13,10 +13,11 @@ button,
 button:active,
 button:focus {
     outline: none;
+    border: none;
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: #F1F1F1;
     margin-bottom: 200px;
 }
 
@@ -56,6 +57,29 @@ a {
 
 .contacts {
     display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 26px;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #1F2225;
+}
+
+.btnMobileScreen {
+    background: inherit;
+}
+
+.mobileScreen {
+    transition: .3s;
+}
+
+.mobileScreen:hover {
+    transform: scale(0.98);
+}
+
+.mobileScreen:active {
+    transform: scale(0.9);
 }
 
 .messengersItem {
@@ -89,11 +113,13 @@ a {
 .promoScreen {
     width: 100%;
     background-image: url("../img/promo-screen-background.svg");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 76px 0;
 }
 
 .blockMnu {
@@ -109,27 +135,11 @@ a {
     color: #858687;
 }
 
-.menuItem {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-.menuItem:hover {
-    background-size: 100% 2px;
-    color: black;
-    transition: .3s;
-    width: fit-content;
-    cursor: pointer;
-}
-
 .application {
     display: flex;
     align-items: center;
-    width: fit-content;
+    width: 344px;
+    height: 75px;
     background: #235DE2;
     border-radius: 50px;
     border: none;
@@ -150,6 +160,7 @@ a {
 
 .application:active {
     transform: scale(0.9);
+    background: #235DE2;
 }
 
 .hi {
@@ -161,8 +172,13 @@ a {
     font-size: 72px;
     line-height: 139%;
     color: #1F2225;
-    height: fit-content;
-    width: fit-content;
+    text-align: start;
+    width: 100%;
+}
+
+.beforeTxt {
+    width: 100%;
+    text-align: start;
 }
 
 .ti-cursor {
@@ -182,7 +198,7 @@ a {
 }
 
 .hrefSpan {
-    color: #5583ea;
+    color: #235DE2;
     border-bottom: 2px solid #5583ea;
 }
 
@@ -217,7 +233,7 @@ a {
     line-height: 197.69%;
     letter-spacing: 0.035em;
     color: #000000;
-    margin-top: 30px;
+    margin-top: 19px;
 }
 
 .descriptionProject {
@@ -227,11 +243,11 @@ a {
     line-height: 197.69%;
     letter-spacing: 0.035em;
     color: #383838;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .caseDescription {
-    background: #EAE9E9;
+    background-color: #EAE9E9;
     border-radius: 30px;
     font-style: normal;
     font-weight: 500;
@@ -240,17 +256,52 @@ a {
     text-align: center;
     letter-spacing: 0.035em;
     color: #A8A8A8;
-    padding: 5px 7px;
-    margin-top: 15px;
+    padding: 4px 20px;
+    margin-top: 10px;
     width: fit-content;
 }
 
-@media screen and (max-width: 720px) {
-    .promoScreen {
-        background-position: left top;
-        background-size: cover;
-        flex-direction: column-reverse;
-        align-items: inherit;
+@media screen and (max-width: 1440px) {
+    .contacts {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+        color: #1F2225;
+    }
+
+    .application {
+        width: 269px;
+        height: 64px;
+    }
+
+    .nameProject {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 197.69%;
+        letter-spacing: 0.035em;
+    }
+
+}
+
+@media screen and (max-width: 882px) {
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .header {
+        margin: 30px 20px;
+    }
+
+    .mobileLogo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -999;
+        width: 100%;
     }
 
     .promoScreenTxt {
@@ -259,8 +310,202 @@ a {
         line-height: 139.19%;
     }
 
+    .promoScreen {
+        background-image: none;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: inherit;
+        padding: 0;
+    }
+
+    .mobileMnu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 100%;
+        height: 100%;
+        background-color: #F1F1F1;
+        color: #1F2225;
+        transition: .5s;
+    }
+
+    .mobileHeader {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px;
+    }
+
+    .contactUs {
+        width: 227px;
+        height: 36px;
+        margin-top: 128px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.02em;
+        color: #858687;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .phoneNumber {
+        width: 303px;
+        height: 37px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 37px;
+        letter-spacing: 0.05em;
+        color: #1F2225;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 33px;
+    }
+
+    .sendMessage {
+        margin-top: 56px;
+        width: 227px;
+        height: 36px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #858687;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .messengers {
+        width: 251px;
+        height: 28px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-top: 27px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .telegram {
+        color: #5583ea;
+    }
+
+    .whatsapp {
+        color: #3ed454;
+    }
+
+    .logo img {
+        width: 158px;
+    }
+
+    .promoScreenTxt {
+        margin-bottom: 30px;
+        font-size: 36px;
+        line-height: 139.19%;
+    }
+
+    .blockMnu {
+        margin-right: inherit;
+    }
+
+    .application {
+        width: 266px;
+        height: 62px;
+    }
+
     .portfolioList {
         display: flex;
         flex-direction: column;
     }
+
+    .fullScreen {
+        display: none;
+    }
+
+    .descriptionProject {
+        margin-top: 10px;
+        line-height: inherit;
+    }
+
+    .caseList {
+        margin-top: 78px;
+    }
+
+    .caseListTxt {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 160.19%;
+    }
+
+    .portfolioList {
+        margin-top: 36px;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .projectCaseBlock {
+        padding: 0 10px;
+    }
+
+    .picture:hover {
+        transform: inherit;
+    }
+
+    .nameProject {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 197.69%;
+        letter-spacing: 0.035em;
+    }
+
+    .menuItem {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 220.19%;
+        letter-spacing: 0.035em;
+    }
+
+    .close {
+        left: -999px;
+    }
+
+    .open {
+        left: 0;
+    }
+}
+
+@media(min-width:882px) {
+    .mobileScreen {
+        display:none;
+    }
+
+    .mobileLogo {
+        display: none;
+    }
+
+    .mobileMnu {
+        display: none;
+    }
+}
+
+.hide {
+    left: -999px;
+}
+
+.show {
+    left: 0;
 }

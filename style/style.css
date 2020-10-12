@@ -161,6 +161,12 @@ a {
     font-size: 72px;
     line-height: 139%;
     color: #1F2225;
+    height: fit-content;
+    width: fit-content;
+}
+
+.ti-cursor {
+    margin-left: 15px;
 }
 
 .caseList {

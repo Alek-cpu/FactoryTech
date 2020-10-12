@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <script src="js/tapIt.js"></script>
     <title>FactoryTech</title>
 </head>
 <body>
@@ -30,9 +33,7 @@
             <button class="application">Оставить&nbsp;заявку&nbsp;<span class="hi"><img src="img/hi-img.svg"></span>
             </button>
         </div>
-        <div class="promoScreenTxt">
-            Прямо сейчас мы делаем мобильное приложение
-        </div>
+        <div id="typer" class="promoScreenTxt"></div>
     </section>
     <section class="caseList">
         <div class="caseListTxt">Мы разрабатываем свой новый сайт.<br/>Но уже сейчас вы можете <span class="hrefSpan">посмотреть наши&nbsp;кейсы</span>&nbsp;👇🏻
@@ -63,5 +64,15 @@
         </div>
     </section>
 </div>
+
+<script>
+    $('#typer').typeIt({
+        strings: ["Прямо сейчас мы делаем мобильное приложение"],
+        speed: 50,
+        breakLines: false,
+        autoStart: false
+    });
+</script>
+
 </body>
 </html>

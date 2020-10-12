@@ -6,6 +6,6 @@ open.addEventListener('click', toggleChecked);
 exit.addEventListener('click', toggleChecked);
 
 
-function toggleChecked (e) {
+function toggleChecked () {
     mobileMnu.classList.toggle('show');
 }

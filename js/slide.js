@@ -7,5 +7,5 @@ exit.addEventListener('click', toggleChecked);
 
 
 function toggleChecked (e) {
-    mobileMnu.classList.toggle('hide');
+    mobileMnu.classList.toggle('show');
 }

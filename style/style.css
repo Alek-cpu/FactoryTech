@@ -321,7 +321,7 @@ a {
     .mobileMnu {
         position: fixed;
         top: 0;
-        left: 0;
+        left: -999px;
         right: 0;
         bottom: 0;
         z-index: 999;
@@ -479,11 +479,11 @@ a {
         letter-spacing: 0.035em;
     }
 
-    .close {
+    .hide {
         left: -999px;
     }
 
-    .open {
+    .show {
         left: 0;
     }
 }

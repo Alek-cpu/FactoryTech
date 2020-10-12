@@ -19,6 +19,8 @@ button:focus {
 body {
     background-color: #F1F1F1;
     margin-bottom: 200px;
+    position: absolute;
+    width: 100%;
 }
 
 .wrapper {
@@ -118,12 +120,12 @@ a {
     background-position: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 76px 0;
+    align-items: flex-start;
+    padding: 76px 0 0 0;
 }
 
 .blockMnu {
-    margin-right: 114px;
+    margin-right: 377px;
 }
 
 .blockMnu .menu {
@@ -154,6 +156,12 @@ a {
     transition: .3s;
 }
 
+.application span {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .application:hover {
     transform: scale(0.98);
 }
@@ -174,6 +182,7 @@ a {
     color: #1F2225;
     text-align: start;
     width: 100%;
+    height: 600px;
 }
 
 .beforeTxt {
@@ -233,7 +242,7 @@ a {
     line-height: 197.69%;
     letter-spacing: 0.035em;
     color: #000000;
-    margin-top: 19px;
+    margin-top: 30px;
 }
 
 .descriptionProject {
@@ -282,6 +291,11 @@ a {
         font-size: 27px;
         line-height: 197.69%;
         letter-spacing: 0.035em;
+        margin-top: 19px;
+    }
+
+    .blockMnu {
+        margin-right: 114px;
     }
 
 }
@@ -293,7 +307,7 @@ a {
     }
 
     .header {
-        margin: 30px 20px;
+        margin: 30px 20px 70px 20px;
     }
 
     .mobileLogo {
@@ -301,13 +315,13 @@ a {
         top: 0;
         left: 0;
         z-index: -999;
-        width: 100%;
     }
 
     .promoScreenTxt {
         margin-bottom: 30px;
         font-size: 36px;
         line-height: 139.19%;
+        height: 600px;
     }
 
     .promoScreen {
@@ -413,10 +427,13 @@ a {
         margin-bottom: 30px;
         font-size: 36px;
         line-height: 139.19%;
+        max-width: 372px;
+        height: 220px;
     }
 
     .blockMnu {
         margin-right: inherit;
+        margin-top: 27px;
     }
 
     .application {
@@ -427,6 +444,10 @@ a {
     .portfolioList {
         display: flex;
         flex-direction: column;
+    }
+
+    .portfolioBlock {
+        margin-top: 38px;
     }
 
     .fullScreen {
@@ -469,6 +490,7 @@ a {
         font-size: 27px;
         line-height: 197.69%;
         letter-spacing: 0.035em;
+        margin-top: 8px;
     }
 
     .menuItem {

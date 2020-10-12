@@ -9,9 +9,9 @@
     <title>FactoryTech</title>
 </head>
 <body>
+<img class="mobileLogo" src="img/Vector.svg">
 <div class="wrapper">
     <header class="header">
-        <img class="mobileLogo" src="img/Vector.svg">
         <div class="logo">
             <img src="img/factory_tech_logo.png" alt="FactoryTech">
         </div>
@@ -60,12 +60,12 @@
                 <div class="menuItem">Мобильное&nbsp;приложение</div>
                 <div class="menuItem">Графический&nbsp;дизайн</div>
             </div>
-            <button class="application btnAnimate">Оставить&nbsp;заявку&nbsp;👋🏻</button>
+            <button class="application btnAnimate"><span>Оставить&nbsp;заявку&nbsp;👋🏻</span></button>
         </div>
         <div class="promoScreenTxt"><span class="beforeTxt">Прямо сейчас мы</span><span id="typer"></span></div>
     </section>
     <section class="caseList">
-        <div class="caseListTxt">Мы разрабатываем свой новый сайт.<br/>Но уже сейчас вы можете <span class="hrefSpan">посмотреть наши&nbsp;кейсы</span>&nbsp;👇🏻
+        <div class="caseListTxt">Мы разрабатываем свой новый&nbsp;сайт.<br/>Но уже сейчас вы можете <span class="hrefSpan">посмотреть наши&nbsp;кейсы</span>&nbsp;👇🏻
         </div>
         <div class="portfolioList">
             <div class="portfolioBlock">
@@ -95,14 +95,18 @@
 </div>
 
 <script>
-    $('#typer').typeIt({
-        strings: [" делаем мобильное приложение"],
-        speed: 30,
-        breakLines: false,
-        autoStart: false
-    });
+
+            $('#typer').typeIt({
+                speed: 120,
+            })
+                .tiType(' делаем мобильное приложение')
+                .tiPause(2000)
+                .tiDelete()
+                .tiType(' составляем ТЗ для мобильного приложения')
+                .tiPause(2000)
+                .tiDelete()
+                .tiType(' согласовываем дизайн-макеты')
 </script>
 <script src="js/slide.js"></script>
-
 </body>
 </html>

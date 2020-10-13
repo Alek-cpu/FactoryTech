@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af4ab0c6-bfe2-4c97-a678-16337c588250" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/img/finger.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/factory_tech_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/finger.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/slide.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,9 @@
       <workItem from="1602488694040" duration="1022000" />
       <workItem from="1602490411599" duration="238000" />
       <workItem from="1602492244786" duration="26365000" />
-      <workItem from="1602538045845" duration="5928000" />
+      <workItem from="1602538045845" duration="6244000" />
+      <workItem from="1602544435940" duration="1373000" />
+      <workItem from="1602583745450" duration="2624000" />
     </task>
     <servers />
   </component>
@@ -73,5 +77,9 @@
       <screen x="0" y="27" width="1306" height="741" />
     </state>
     <state x="436" y="155" width="424" height="491" key="FileChooserDialogImpl/0.27.1306.741@0.27.1306.741" timestamp="1602490646831" />
+    <state x="358" y="153" width="589" height="488" key="find.popup" timestamp="1602584050175">
+      <screen x="0" y="27" width="1306" height="741" />
+    </state>
+    <state x="358" y="153" width="589" height="488" key="find.popup/0.27.1306.741@0.27.1306.741" timestamp="1602584050175" />
   </component>
 </project>

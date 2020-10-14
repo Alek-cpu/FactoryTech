@@ -216,14 +216,15 @@ a {
     color: #000000;
 }
 
-.caseListTxt div {
-    display: flex;
-    align-items: center;
-}
-
 .hrefSpan {
     color: #235DE2;
     border-bottom: 2px solid #5583ea;
+    position: relative;
+}
+
+.hrefSpan img {
+    position: absolute;
+    top: 5px;
 }
 
 .portfolioList {
@@ -541,6 +542,11 @@ a {
 
     .show {
         left: 0;
+    }
+
+    .hrefSpan img {
+        position: absolute;
+        top: inherit;
     }
 
 }

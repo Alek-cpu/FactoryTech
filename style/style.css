@@ -27,8 +27,8 @@ body {
     margin-right: auto;
     margin-left:  auto;
     max-width: 1440px;
-    padding-right: 10px;
-    padding-left:  10px;
+    padding-right: 80px;
+    padding-left:  80px;
 }
 
 .blue:hover {
@@ -191,7 +191,6 @@ a {
     color: #1F2225;
     text-align: start;
     width: 791px;
-    /*height: 600px;*/
     margin-top: -40px;
 }
 
@@ -268,7 +267,7 @@ a {
     line-height: 197.69%;
     letter-spacing: 0.035em;
     color: #383838;
-    margin-top: 15px;
+    margin-top: -10px;
 }
 
 .caseDescription {
@@ -324,14 +323,35 @@ a {
     }
 }
 
-@media screen and (max-width: 882px) {
+@media screen and (max-width: 1105px) {
+    .wrapperScreen {
+        margin-top: -2%;
+    }
+}
 
+@media screen and (max-width: 1032px) {
+    .txtWrapper {
+        line-height: 139.19%;
+        margin-top: 9px;
+    }
+
+    .promoScreenTxt {
+        font-size: 53px;
+    }
+
+    .wrapperScreen {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 882px) {
     .wrapper {
-        width: 100%;
+        padding-right: 20px;
+        padding-left: 20px;
     }
 
     .header {
-        margin: 30px 20px 70px 20px;
+        margin: 30px 0 70px 0;
     }
 
     .mobileLogo {
@@ -359,6 +379,14 @@ a {
 
     .backgroundPromoScreen {
         display: none;
+    }
+
+    .descriptionProject {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 197.69%;
+        letter-spacing: 0.035em;
     }
 
     .mobileMnu {
@@ -489,11 +517,6 @@ a {
         display: none;
     }
 
-    .descriptionProject {
-        margin-top: 10px;
-        line-height: inherit;
-    }
-
     .caseList {
         margin-top: 78px;
     }
@@ -507,12 +530,12 @@ a {
 
     .portfolioList {
         margin-top: 36px;
-        margin-left: -10px;
-        margin-right: -10px;
+        margin-left: -20px;
+        margin-right: -20px;
     }
 
     .projectCaseBlock {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .picture:hover {
@@ -547,6 +570,27 @@ a {
     .hrefSpan img {
         position: absolute;
         top: inherit;
+    }
+
+    .tools {
+        width: 30px;
+    }
+
+    .caseDescription {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 197.69%;
+        text-align: center;
+        letter-spacing: 0.035em;
+    }
+
+    .nameProject {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 27px;
+        line-height: 197.69%;
+        letter-spacing: 0.035em;
     }
 
 }

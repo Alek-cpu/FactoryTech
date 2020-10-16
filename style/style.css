@@ -292,6 +292,53 @@ a {
     width: fit-content;
 }
 
+.form {
+    background-color: lavender;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 74px;
+}
+
+.itemForm {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.itemForm label {
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.itemForm input {
+    padding-left: 20px;
+     width: 75%;
+    height: 50px;
+}
+
+.btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnPrimary {
+    width: 344px;
+    height: 75px;
+    background: #235DE2;
+    border-radius: 50px;
+    border: none;
+    padding: 13px 40px;
+    margin-top: 30px;
+    font-size: 19px;
+    line-height: 186.19%;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+
+
 @media screen and (max-width: 1440px) {
     .contacts {
         font-style: normal;
@@ -605,9 +652,10 @@ a {
         line-height: 197.69%;
         letter-spacing: 0.035em;
     }
-
-
-
+    .btnPrimary {
+        width: 100%;
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 343px) {

@@ -3,6 +3,10 @@
     src: url(../fonts/Ubuntu-R.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -315,11 +319,6 @@ a {
     padding-left: 20px;
      width: 75%;
     height: 50px;
-}
-
-.btn {
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .btnPrimary {

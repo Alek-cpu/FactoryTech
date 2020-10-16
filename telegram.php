@@ -6,14 +6,14 @@ $chat_id = "-225423257";
 
 $arr = array(
     'Имя пользователя: ' => $name,
-    'Телефон пользователя: ' => $phone,
+    'Телефон пользователя: ' => $phone
 );
 
 foreach($arr as $key => $value) {
-    $txt .= "<b>".$key"</b> ".$value."%0A";
+    $txt .= "<b>".$key."</b> ".$value."%0A";
 };
 
-$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$text}", "r");
+$sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
 
 if ($sendToTelegram) {
     echo '<h1>Спасибо за то, что обратились!</h1>';

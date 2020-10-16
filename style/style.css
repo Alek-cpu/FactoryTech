@@ -86,6 +86,8 @@ a {
 
 .messengersItem {
     cursor: pointer;
+    color: #858687;
+    text-decoration: none;
 }
 
 .telephone a {
@@ -203,6 +205,10 @@ a {
     margin-left: 15px;
 }
 
+.animate {
+    transition: .5s;
+}
+
 .caseList {
     margin-top: 227px;
 }
@@ -213,6 +219,7 @@ a {
     font-size: 40px;
     line-height: 160.19%;
     color: #000000;
+    transition: .3s;
 }
 
 .hrefSpan {
@@ -377,10 +384,6 @@ a {
         margin-top: inherit;
     }
 
-    .promoScreen {
-        padding: 0;
-    }
-
     .backgroundPromoScreen {
         display: none;
     }
@@ -496,11 +499,17 @@ a {
 
     .promoScreen {
         height: auto;
+        padding: 0;
+    }
+
+    .promoScreenTxt {
+        margin-bottom: 30px;
+        height: inherit;
     }
 
     .blockMnu {
         margin-right: inherit;
-        margin-top: 27px;
+        margin-top: 0;
     }
 
     .application {
@@ -597,6 +606,15 @@ a {
         letter-spacing: 0.035em;
     }
 
+
+
+}
+
+@media(max-width: 343px) {
+    .blockMnu {
+        margin-right: inherit;
+        margin-top: 15px;
+    }
 }
 
 @media(min-width:882px) {
@@ -615,6 +633,14 @@ a {
 
 .hide {
     left: -999px;
+}
+
+.noShow {
+    opacity: 0;
+}
+
+.showContent {
+    opacity: 1;
 }
 
 .show {

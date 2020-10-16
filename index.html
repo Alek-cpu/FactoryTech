@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style/style.css">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>FactoryTech</title>
 </head>
 <body>
@@ -18,8 +19,8 @@
         <div class="contacts fullScreen">
             <div class="telephone"><a href="tel:+79279831149">+7&nbsp;(927)&nbsp;983-11-49</a></div>
             <div class="messengers">
-                <div class="messengersItem blue">Telegram</div>
-                <div class="messengersItem leftSpace  green">Whatsapp</div>
+                <div class="messengersItem blue"><a class="messengersItem blue" href="https://t.me/kukolev_aleksey">Telegram</a></div>
+                <div class="messengersItem leftSpace green"><a class="messengersItem green" href="https://wa.me/+79279831149">Whatsapp</a></div>
             </div>
         </div>
         <div class="contacts mobileScreen">
@@ -34,7 +35,7 @@
                 <img src="img/factory_tech_logo.svg" alt="FactoryTech">
             </div>
             <div class="mobileScreen">
-                <button class="btnMobileScreen exit" onclick="exitWin">
+                <button class="btnMobileScreen exit">
                     <img src="img/close.svg">
                 </button>
             </div>
@@ -47,8 +48,8 @@
             Или отправить сообщение в мессенджерах:
         </div>
         <div class="messengers">
-            <span class="telegram">Telegram</span>
-            <span class="whatsapp">Whatsapp</span>
+            <a href="https://t.me/kukolev_aleksey"><span class="telegram">Telegram</span></a>
+            <a href="https://wa.me/+79279831149"><span class="whatsapp">Whatsapp</span></a>
         </div>
     </div>
     <section class="promoScreen">
@@ -68,10 +69,10 @@
         </div>
     </section>
     <section class="caseList">
-        <div class="caseListTxt">Мы разрабатываем свой новый&nbsp;сайт.<br/><div>Но уже сейчас вы можете&#8194;<span class="hrefSpan">посмотреть&nbsp;наши&nbsp;кейсы <img
+        <div class="caseListTxt animate noShow">Мы разрабатываем свой новый&nbsp;сайт.<br/><div>Но уже сейчас вы можете&#8194;<span class="hrefSpan">посмотреть&nbsp;наши&nbsp;кейсы <img
                 src="img/finger.svg" class="finger"></span></div></div>
         <div class="portfolioList">
-            <div class="portfolioBlock">
+            <div class="portfolioBlock animate noShow">
                 <img class="picture" src="img/black-rectangle.png"/>
                 <div class="projectCaseBlock">
                     <div class="projectCase">
@@ -81,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="portfolioBlock">
+            <div class="portfolioBlock animate noShow">
                 <img class="picture" src="img/black-rectangle.png"/>
 
                 <div class="projectCaseBlock">
@@ -111,5 +112,17 @@
                 .tiType(' согласовываем дизайн-макеты')
 </script>
 <script src="js/slide.js"></script>
+<script>
+    $(window).scroll(function (){
+        $(' .animate').each(function (){
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+450) {
+                $(this).addClass('showContent');
+            }
+        });
+    });
+</script>
+
 </body>
 </html>

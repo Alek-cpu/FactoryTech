@@ -377,6 +377,10 @@ a {
         margin-top: inherit;
     }
 
+    .promoScreen {
+        padding: 0;
+    }
+
     .backgroundPromoScreen {
         display: none;
     }

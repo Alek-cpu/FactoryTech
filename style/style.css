@@ -561,6 +561,7 @@ a {
     .application {
         width: 266px;
         height: 62px;
+        margin-top: 25px;
     }
 
     .portfolioList {

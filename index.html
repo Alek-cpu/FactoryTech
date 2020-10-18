@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <title>FactoryTech</title>
 </head>
 <body>
@@ -99,28 +100,27 @@
     <form class="form" id="formInput" action="telegram.php" method="post">
         <div class="formGroup itemForm">
             <label for="">Ваше имя</label>
-            <input type="text" class="formControl nameInput" id="" name="userName" placeholder="Имя">
+            <input type="text" minlength="1" maxlength="60" class="formControl nameInput" id="" name="userName" placeholder="Имя">
         </div>
         <div class="formGroup itemForm">
             <label for="">Ваш телефон</label>
-            <input type="text" class="formControl" id="" name="userPhone" placeholder="+7&nbsp;(927)&nbsp;983-11-49">
+            <input type="tel" minlength="11" maxlength="11" class="formControl" id="number" name="userPhone" placeholder="+7&nbsp;(927)&nbsp;983-11-49">
         </div>
         <button type="submit" class="application btn btnPrimary">Отправить заявку</button>
     </form>
 </div>
 
 <script>
-
-            $('#typer').typeIt({
-                speed: 120,
-            })
-                .tiType(' делаем мобильное приложение')
-                .tiPause(2000)
-                .tiDelete()
-                .tiType(' составляем ТЗ для мобильного приложения')
-                .tiPause(2000)
-                .tiDelete()
-                .tiType(' согласовываем дизайн-макеты')
+    $('#typer').typeIt({
+        speed: 120,
+    })
+        .tiType(' делаем мобильное приложение')
+        .tiPause(2000)
+        .tiDelete()
+        .tiType(' составляем ТЗ для мобильного приложения')
+        .tiPause(2000)
+        .tiDelete()
+        .tiType(' согласовываем дизайн-макеты')
 </script>
 <script src="js/slide.js"></script>
 <script>
@@ -135,5 +135,10 @@
     });
 </script>
 <script src="js/scroll.js"></script>
+<script>
+    jQuery(function($){
+        $("#number").mask("+7 (999) 999-99-99");
+    });
+</script>
 </body>
 </html>

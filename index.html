@@ -97,16 +97,16 @@
             </div>
         </div>
     </section>
-    <form class="form" id="formInput" action="telegram.php" method="post">
+    <form class="form" onsubmit="return checkForm(this)" id="formInput" action="telegram.php" method="post">
         <div class="formGroup itemForm">
-            <label for="">Ваше имя</label>
-            <input type="text" minlength="1" maxlength="60" class="formControl nameInput" id="" name="userName" placeholder="Имя">
+            <label>Ваше имя *</label>
+            <input required type="text" minlength="1" maxlength="60" class="formControl nameInput" id="userName" name="userName" placeholder="Имя">
         </div>
         <div class="formGroup itemForm">
-            <label for="">Ваш телефон</label>
-            <input type="tel" minlength="11" maxlength="11" class="formControl" id="number" name="userPhone" placeholder="+7&nbsp;(927)&nbsp;983-11-49">
+            <label>Ваш телефон *</label>
+            <input required type="tel" minlength="11" maxlength="11" class="formControl" id="userPhone" name="userPhone" placeholder="+7&nbsp;(927)&nbsp;983-11-49">
         </div>
-        <button type="submit" class="application btn btnPrimary">Отправить заявку</button>
+        <input type="submit" class="application btn btnPrimary" id="btn" value="Отправить заявку">
     </form>
 </div>
 
@@ -137,7 +137,7 @@
 <script src="js/scroll.js"></script>
 <script>
     jQuery(function($){
-        $("#number").mask("+7 (999) 999-99-99");
+        $("#userPhone").mask("+7 (999) 999-99-99");
     });
 </script>
 </body>

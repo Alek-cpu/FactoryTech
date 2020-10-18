@@ -653,7 +653,7 @@ a {
         letter-spacing: 0.035em;
     }
     .btnPrimary {
-        width: 100%;
+        width: fit-content;
         font-size: 15px;
     }
 }

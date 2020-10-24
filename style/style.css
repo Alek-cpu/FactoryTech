@@ -13,8 +13,10 @@ html {
     font-family: "Ubuntu-Regular";
 }
 
-button,
+button, .btn,
 button:active,
+.btn:active,
+.btn:focus,
 button:focus {
     outline: none;
     border: none;
@@ -128,7 +130,7 @@ a {
 .wrapperScreen {
     display: flex;
     justify-content: space-between;
-    margin-top: 6%;
+    margin-top: 3%;
 }
 
 .backgroundPromoScreen {
@@ -296,12 +298,30 @@ a {
     width: fit-content;
 }
 
-.form {
-    background-color: lavender;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+.formQuery {
     margin-top: 74px;
+}
+
+.formTitle{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.form {
+    padding: 0 0 30px 0;
+    align-items: flex-end;
+    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+    gap: 30px;
+}
+
+.itemForm label {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .itemForm {
@@ -317,23 +337,23 @@ a {
 
 .itemForm input {
     padding-left: 20px;
-     width: 75%;
     height: 50px;
 }
 
 .btnPrimary {
-    width: 344px;
-    height: 75px;
     background: #235DE2;
-    border-radius: 50px;
     border: none;
-    padding: 13px 40px;
-    margin-top: 30px;
     font-size: 19px;
     line-height: 186.19%;
     letter-spacing: 0.035em;
     color: #FFFFFF;
     transition: .3s;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 7px 25px;
+    font-style: normal;
+    font-weight: 500;
 }
 
 
@@ -561,7 +581,7 @@ a {
     .application {
         width: 266px;
         height: 62px;
-        margin-top: 25px;
+        margin-top: 5px;
     }
 
     .portfolioList {
@@ -652,9 +672,27 @@ a {
         line-height: 197.69%;
         letter-spacing: 0.035em;
     }
+
+    .form {
+        flex-direction: column;
+        align-items: inherit;
+        width: 70%;
+        display: inherit;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .itemForm input {
+        width: inherit;
+    }
+
     .btnPrimary {
         width: fit-content;
         font-size: 15px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 25px;
     }
 }
 
@@ -662,6 +700,10 @@ a {
     .blockMnu {
         margin-right: inherit;
         margin-top: 15px;
+    }
+
+    .txtWrapper {
+        height: 220px;
     }
 }
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
@@ -98,17 +99,26 @@
         </div>
     </section>
     <section class="formQuery">
-        <div class="formTitle">Свяжитесь с нами</div>
-        <form class="form" onsubmit="return checkForm(this)" id="formInput" action="telegram.php" method="post">
+        <div class="formTitle" id="formInput">Свяжитесь с нами</div>
+        <form class="form" onsubmit="return checkForm(this)" action="telegram.php" method="post">
             <div class="formGroup itemForm">
-                <label>Ваше имя &#10034;</label>
+                <label>Ваше имя *</label>
                 <input required type="text" minlength="1" maxlength="60" class="formControl nameInput" id="userName" name="userName" placeholder="Имя">
             </div>
             <div class="formGroup itemForm">
-                <label>Ваш телефон &#10034;</label>
+                <label>Ваш телефон *</label>
                 <input required type="tel" minlength="11" maxlength="11" class="formControl" id="userPhone" name="userPhone" placeholder="+7&nbsp;(927)&nbsp;983-11-49">
             </div>
-            <input type="submit" class="btn btnPrimary" id="btn" value="Отправить заявку">
+            <div class="formGroup itemForm">
+                <label>Как с вами связаться</label>
+                <select name="selectMessenger" class="formControl" id="userMessenger" >
+                    <option value="Написать в WhatsApp">Написать в WhatsApp</option>
+                    <option value="Написать в Telegram">Написать в Telegram</option>
+                    <option value="Перезвонить" selected>Перезвонить</option>
+                </select>
+
+            </div>
+            <button type="submit" class="btn btnPrimary" id="btn">Отправить</button>
         </form>
     </section>
 </div>
@@ -118,5 +128,6 @@
 <script src="js/animate.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/mask.js"></script>
+<script src="js/request.js"></script>
 </body>
 </html>

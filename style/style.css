@@ -24,17 +24,16 @@ button:focus {
 
 body {
     background-color: #F1F1F1;
-    margin-bottom: 200px;
     position: absolute;
     width: 100%;
 }
 
 .wrapper {
     margin-right: auto;
-    margin-left:  auto;
+    margin-left: auto;
     max-width: 1440px;
     padding-right: 80px;
-    padding-left:  80px;
+    padding-left: 80px;
 }
 
 .blue:hover {
@@ -150,6 +149,7 @@ a {
     line-height: 244.19%;
     letter-spacing: 0.035em;
     color: #858687;
+    margin-bottom: 15px;
 }
 
 .application {
@@ -300,9 +300,13 @@ a {
 
 .formQuery {
     margin-top: 74px;
+    background: white;
+    padding: 80px;
+    margin-left: -80px;
+    margin-right: -80px;
 }
 
-.formTitle{
+.formTitle {
     font-weight: 700;
     font-size: 35px;
     line-height: 1.2;
@@ -314,14 +318,18 @@ a {
     align-items: flex-end;
     justify-content: space-between;
     display: grid;
-    grid-template-columns: 3fr 3fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 90px;
+    gap: 5px;
 }
 
 .itemForm label {
-    padding-bottom: 5px;
     display: flex;
     align-items: center;
+    font-size: 15px;
+    line-height: 1.375;
+    padding-bottom: 10px;
+    font-weight: 500;
+    text-align: left;
 }
 
 .itemForm {
@@ -331,8 +339,7 @@ a {
 }
 
 .itemForm label {
-    margin-right: 30px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .itemForm input {
@@ -340,23 +347,20 @@ a {
     height: 50px;
 }
 
+.itemForm select {
+    height: 50px;
+    padding-left: 20px;
+}
+
 .btnPrimary {
     background: #235DE2;
     border: none;
-    font-size: 19px;
-    line-height: 186.19%;
-    letter-spacing: 0.035em;
     color: #FFFFFF;
     transition: .3s;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    padding: 7px 25px;
-    font-style: normal;
-    font-weight: 500;
+    height: 50px;
+    font-size: 15px;
+    border-radius: inherit;
 }
-
-
 
 @media screen and (max-width: 1440px) {
     .contacts {
@@ -405,7 +409,6 @@ a {
 @media screen and (max-width: 1032px) {
     .txtWrapper {
         line-height: 139.19%;
-        margin-top: 9px;
     }
 
     .promoScreenTxt {
@@ -539,6 +542,7 @@ a {
         justify-content: space-between;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 128px;
     }
 
     .telegram {
@@ -580,8 +584,8 @@ a {
 
     .application {
         width: 266px;
-        height: 62px;
-        margin-top: 5px;
+        height: 50px;
+        margin-top: 20px;
     }
 
     .portfolioList {
@@ -645,6 +649,7 @@ a {
 
     .show {
         left: 0;
+        overflow: overlay;
     }
 
     .hrefSpan img {
@@ -673,33 +678,37 @@ a {
         letter-spacing: 0.035em;
     }
 
+    .formQuery {
+        margin-top: 74px;
+        background: #ffffff;
+        padding: 45px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
     .form {
         flex-direction: column;
         align-items: inherit;
-        width: 70%;
-        display: inherit;
+        width: 100%;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
+        justify-content: center;
     }
 
-    .itemForm input {
+    .itemForm input, .itemForm select {
         width: inherit;
     }
 
     .btnPrimary {
-        width: fit-content;
+        width: 100%;
+        height: 50px;
         font-size: 15px;
         margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
         padding: 10px 25px;
-    }
-}
-
-@media(max-width: 343px) {
-    .blockMnu {
-        margin-right: inherit;
-        margin-top: 15px;
+        border-radius: inherit;
     }
 
     .txtWrapper {
@@ -707,9 +716,20 @@ a {
     }
 }
 
-@media(min-width:882px) {
+@media (max-width: 343px) {
+    .blockMnu {
+        margin-right: inherit;
+        margin-top: 20px;
+    }
+
+    .txtWrapper {
+        height: 220px;
+    }
+}
+
+@media (min-width: 882px) {
     .mobileScreen {
-        display:none;
+        display: none;
     }
 
     .mobileLogo {
@@ -735,4 +755,59 @@ a {
 
 .show {
     left: 0;
+}
+
+/*111*/
+.select {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+}
+
+.select.is-active .select__body {
+    display: block;
+}
+
+.select__header {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+}
+
+.select__current {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.select__icon {
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    height: 40px;
+    margin-left: auto;
+    text-align: center;
+    width: 40px;
+}
+
+.select__body {
+    border: 1px solid #cccccc;
+    border-top: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+}
+
+.select__item {
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.select__item:hover {
+    background-color: #f2f2f2;
 }

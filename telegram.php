@@ -3,7 +3,7 @@ $name = $_POST['userName'];
 $phone = $_POST['userPhone'];
 $messenger = $_POST['userMessenger'];
 $token = "1270251657:AAEbn-C3vq8QrQb8RmnfHAcEnWiEFsUykKI";
-$chat_id = "-478679007";
+$chat_id = "-346199224";
 
 $arr = array(
     'Имя пользователя: ' => $name,

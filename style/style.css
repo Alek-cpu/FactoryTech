@@ -300,7 +300,6 @@ a {
 
 .formQuery {
     margin-top: 74px;
-    background: white;
     padding: 80px;
     margin-left: -80px;
     margin-right: -80px;
@@ -310,7 +309,13 @@ a {
     font-weight: 700;
     font-size: 35px;
     line-height: 1.2;
-    text-align: center;
+    margin-bottom: 15px;
+}
+
+.formSecondTitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
 }
 
 .form {
@@ -318,7 +323,7 @@ a {
     align-items: flex-end;
     justify-content: space-between;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 90px;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
     gap: 5px;
 }
 
@@ -348,7 +353,7 @@ a {
 }
 
 .itemForm select {
-    height: 50px;
+    height: 54px;
     padding-left: 20px;
 }
 
@@ -357,7 +362,7 @@ a {
     border: none;
     color: #FFFFFF;
     transition: .3s;
-    height: 50px;
+    height: 54px;
     font-size: 15px;
     border-radius: inherit;
 }
@@ -583,9 +588,10 @@ a {
     }
 
     .application {
-        width: 266px;
+        width: inherit;
         height: 50px;
         margin-top: 20px;
+        padding: 9px 25px;
     }
 
     .portfolioList {
@@ -680,10 +686,22 @@ a {
 
     .formQuery {
         margin-top: 74px;
-        background: #ffffff;
         padding: 45px;
         margin-left: -20px;
         margin-right: -20px;
+    }
+
+    .formTitle {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .formSecondTitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 1.5;
     }
 
     .form {
@@ -710,20 +728,22 @@ a {
         padding: 10px 25px;
         border-radius: inherit;
     }
-
-    .txtWrapper {
-        height: 220px;
-    }
 }
 
 @media (max-width: 343px) {
     .blockMnu {
         margin-right: inherit;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
     .txtWrapper {
-        height: 220px;
+        height: inherit;
+        margin-top: 30px;
+        font-size: 33px;
+    }
+
+    .application {
+        margin-top: 30px;
     }
 }
 

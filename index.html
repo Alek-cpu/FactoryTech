@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width"/>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
@@ -99,7 +100,8 @@
         </div>
     </section>
     <section class="formQuery">
-        <div class="formTitle" id="formInput">Свяжитесь с нами</div>
+        <div class="formTitle" id="formInput">Обсудить проект</div>
+        <div class="formSecondTitle">Оставьте заявку и мы свяжемся с вами в ближайшее время</div>
         <form class="form" onsubmit="return checkForm(this)" action="telegram.php" method="post">
             <div class="formGroup itemForm">
                 <label>Ваше имя *</label>
@@ -118,7 +120,7 @@
                 </select>
 
             </div>
-            <button type="submit" class="btn btnPrimary" id="btn">Отправить</button>
+            <button type="submit" class="btn btnPrimary btnAnimate" id="btn">Отправить</button>
         </form>
     </section>
 </div>
@@ -128,6 +130,5 @@
 <script src="js/animate.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/mask.js"></script>
-<script src="js/request.js"></script>
 </body>
 </html>
